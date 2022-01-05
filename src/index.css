@@ -1,13 +1,149 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: rgb(219, 235, 240);
+  /* background-image: url("https://hougumlaw.com/wp-content/uploads/2016/05/light-website-backgrounds-light-color-background-images-light-color-background-images-for-website-1024x640.jpg"); */
+  background-color: #110f0f;
+}
+.Navbar {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  /* max-width: 700px; */
+  margin: 0 auto;
+  border-bottom: 2px solid #d5e7b6;
+  background-color: #110f0f;
+}
+.Navbar h1 {
+  color: #c3b8f0;
+}
+.Navbar .links {
+  margin-left: auto;
+}
+.Navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  font-weight: 600;
+}
+.Navbar a:hover {
+  color: #dc6161;
+}
+.Content {
+  max-width: 1400px;
+  margin: 30px auto;
+  padding: 20px;
+}
+/* note previews / list */
+.note-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #3f4632;
+}
+.note-preview:hover {
+  box-shadow: 3px 3px 5px #3f4632;
+}
+.note-preview h2 {
+  font-size: 20px;
+  color: #c3b8f0;
+  margin-bottom: 1px;
+}
+.note-preview a{
+  text-decoration: none;
+}
+/* .note-preview button {
+  background: #2e235a;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+} */
+
+/* blog details page */
+.note-details h2 {
+  font-size: 25px;
+  color: #c3b8f0;
+  margin-bottom: 10px;
+}
+.note-details div {
+  margin: 20px 0;
+}
+.note-details button {
+  background: #2e235a;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* create new blog form */
+.create {
+  /* max-width: 400px; */
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+  font-weight: 600;
+}
+.create h2 {
+  font-size: 25px;
+  color: #c3b8f0;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  font-weight: 500;
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  margin-bottom: 30px;
+  border: 1px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  margin-top: 15px;
+  background: #2e235a;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/*Create Notfound Page*/
+.not-found {
+  text-align: center;
+  font-weight: 700;
+  font-size: 25px;
+}
+.not-found h2 {
+  padding: 25px;
+}
+.not-found p {
+  padding: 25px;
+}
+
+/*About Us*/
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 30px;
+}
+.about-us h2 {
+  padding: 30px;
+}
+
+/*notelist*/
+.notetitle {
+  font-size: 32px;;
+  text-align: center;
+  color: #c3b8f0;
 }
